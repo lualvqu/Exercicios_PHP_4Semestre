@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio 5</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		h1{
+			text-align: center;
+		}
+		h3{
+			text-align: center;
+		}
+		.btn-container{
+			align-content: center;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<h1>Exercício 05 - Equipes com até 4 Alunos</h1>
+<h3>Lucas Alves - Thiago Bussolin</h3>
+<hr>
+<form name="FORM1" action="Exe05.php" method="POST">
+	<h3>Quantidade de Alunos na equipe: <input type="text" id='input1' name="QTD" size="2" maxlength="2" autofocus></h3>
+	<h3>Nome representante da equipe: <input type="text" name="NOM" size="20" maxlength="30"></h3>
+<hr>
+<div class="btn-container">
+<button type="reset" onclick="document.getElementById('input1').focus()">Limpar</button>
+<button type="subimit">Enviar</button>	
+</div>
+</form>
+</body>
+</html>

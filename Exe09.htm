@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exericio 09</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			background-color: lightgreen;
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h1>Exercício 09 - Compra de Livro</h1>
+		<h3>Lucas Alves - Thiago Bussolin</h3>
+		<br>
+		<hr>
+		<br>
+		<form name="Form4" method="POST" action="Exe09.php">
+			<h3>
+				Escolha a forma de pagamento<br>
+				<input type="radio" name="PGTO" value="10" checked>R$ 10,00 à vista<br>
+				<input type="radio" name="PGTO" value="12">R$ 12,00 em 2 vezes<br>
+				<input type="radio" name="PGTO" value="15">R$ 15,00 em 3 vezes<br>
+				<br>
+				Digite quantas unidade deste livro deseja comprar <input type="text" id="quant" name="QTDE" size="3" maxlength="3"><br>
+				<br>
+				Selecione a cidade para o cálculo do frete: <select name="CIDADE">
+					<option value="SA">Santo André: 1%</option>
+					<option value="SB">São Bernardo: 2%</option>
+					<option value="SC">São Caetano: 5%</option>
+					<option value="OU">Outras: 10%</option>
+				</select>
+			</h3>
+			
+			<hr>
+			<div>
+				<button type="reset" onclick="document.getElementById('quant').focus()">Limpar</button>
+				<button type="submit">Enviar</button>
+			</div>
+		</form>
+	</center>
+</body>
+</html>
